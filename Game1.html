@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game1Taqwa</title>
+    <link rel="stylesheet" href="Game1.css">
+</head>
+<body>
+<!--     <embed id="sound" src="Friction_-_Imagine_Dragons.ogg" width="50" height="30" loop="true" autostart="true">-->
+    
+  <div id="startPage"> 
+      <button class="button" id="play" ><span> Play</span></button>
+       <button class="button" id="options"><span> Options</span></button>
+       <button class="button" id="credits"><span> Credits </span></button>
+       
+    </div>
+    
+<!--  Creditd button-->
+
+<div id="myModalCredit" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Credits</h2>
+    </div>
+    <div class="modal-body">
+      <p>This game is made by:<br> 1)Taqwa<br>2)Yara<br>3)Eslam<br>4)Ahmed</p>
+      <p>The goal of the game is to collect as many eggs as possible ..</p>
+    </div>
+    <div class="modal-footer">
+      <h5>Client Side Technologies @2018</h5>
+    </div>
+  </div>
+</div>
+
+<!--    Options button -->
+
+ <div id="myModalOption" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Options</h2>
+    </div>
+    <div class="modal-body">
+     <button class="button" id="Audio" ><span> Audio</span></button>
+        <audio src="Friction_-_Imagine_Dragons.mp3" type="audio/ogg" controls loop autoplay></audio>
+      <button class="button" id="char" ><span> Charecters</span></button>
+    </div>
+  </div>
+</div>
+    
+<!--    Play button -->
+   
+ <div id="myModalPlay" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Enter your Name to keep track of your score</h2>
+    </div>
+    <div class="modal-body">
+      <form>
+        <h3> Login Here </h3>
+        <p>Username</p> 
+        <input type="text" name="userName" placeholder="Your Name:"><br><br>
+        <input type="submit" name="submit" value="Login"><br><br>
+      </form>
+    </div>
+  </div>
+</div>
+
+    <script src="Game1.js"></script>
+  
+    
+</body>
+</html>
