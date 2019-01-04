@@ -1,0 +1,153 @@
+body {
+    background : top url("5fee8e4a9fea271529cfd8828dd990d5.gif") no-repeat ;
+    background-size: 100%;
+/*   padding-top: 100px;*/
+    padding: 0;
+}
+#level,#play
+{   align-content: center;
+    margin-top: 13%;
+    margin-left: 40%;
+    border-radius: 100px;  
+    font-family: "Comic Sans MS";
+    font-size: 90;
+}
+#credits,#char,#Exit,#Yes,#No
+{ 
+    align-content: center;
+    margin-top: 6%;
+    margin-left: 40%;
+    border-radius: 50px;   
+}
+
+#submit{
+  font-family: "Times New Roman" ;
+  border-radius: 16px;
+  background-color:firebrick;
+  color:wheat;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px; 
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button
+{
+font-family: "Times New Roman",oblique ;
+display: inline-block;
+  border-radius: 4px;
+  background-color:firebrick;
+  border: none;
+  color:wheat;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button:hover {
+  background-color:cadetblue; 
+  color: white;
+    
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* The Credits (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  margin-top:10%; 
+  margin-left:25%;
+  background-color:blanchedalmond;
+  width: 45%;
+ color: firebrick;
+}
+
+/* The Close Button */
+.close {
+  color: firebrick;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.modal-header,.modal-footer {
+  padding: 1px 20px;
+  background-color:#004d4d;
+  color :wheat;
+}
+
+.modal-body {padding: 20px 16px;}
+
+h4{
+    margin-left:500px;
+}
+#e1{
+    display:none;
+     color: red ;
+}
+
+/* Char Zoom */
+
+.zoom {
+  padding: 20px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+.zoom:hover {
+  transform: scale(1.5); 
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px ;
+  box-sizing: border-box;
+}
