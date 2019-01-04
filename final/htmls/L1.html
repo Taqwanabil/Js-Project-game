@@ -1,0 +1,62 @@
+
+<html>
+
+<head>
+  <title>Space</title>
+  <link href="../css/L1.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="container">
+
+    <div id="score_help"> Score:
+      <span id="score">0</span> | Life:
+      <span id="life"></span> | Use mouse to control
+    </div>
+
+     <embed id="sound" src="../imgs/Space2.mp3" width="70" height="30" loop="true" autostart="true" >
+
+
+    <div id="spaceship1" class="spaceShip"></div>
+    <div id="spaceship2" class="spaceShip"></div>
+    <div id="spaceship3" class="spaceShip"></div>
+<!--      egg-->
+
+    <img src="../imgs/R.png" id="rocket1" class="rocket" data-bomb='1'>
+    <img src="../imgs/R.png" id="rocket2" class="rocket" data-bomb='2'>
+    <img src="../imgs/R.png" id="rocket3" class="rocket" data-bomb='3'>
+
+<!--      ballseye-->
+    <div id="bomb1" class="bomb"></div>  
+    <div id="bomb2" class="bomb"></div>
+    <div id="bomb3" class="bomb"></div>
+
+<!--      basket-->
+    <div id="char">
+    <img id="test" width="100" >
+      <span id="score_1"></span>
+    </div>
+
+    <div id="floor"></div>
+
+    <button id="restart">Restart</button>
+
+  </div>
+    
+
+<a href="../htmls/index.html" class="previous round">&#8249;</a>
+
+<img  id="daiamondimg" src="../imgs/b1.png" />
+
+<img id="daiamondimg1" src="../imgs/b2.png" />
+
+<img id="daiamondimg2" src="../imgs/b3.png" />
+    
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/collision_detection.js"></script>
+  <script src="../js/variables.js"></script>
+  <script src="../js/functions.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

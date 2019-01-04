@@ -1,0 +1,178 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#container {
+   height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    overflow: hidden;
+    background: url('../imgs/bg2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#score_help {
+    text-align: center;
+    font-size: 25px;
+     background-color:palevioletred;
+    padding-bottom: 10px;
+     padding-top: 10px;
+}
+
+#branch {
+    position: absolute;
+    height: 2%;
+    width: 100%;
+    top: 23%;
+}
+
+.spaceShip {
+    position: absolute;
+    height: 15%;
+    width: 8%;
+    top: 10%;
+    background: url('../imgs/S.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+#spaceship1 {
+    left: 23%;
+}
+
+#spaceship2 {
+    left: 48%;
+}
+
+#spaceship3 {
+    left: 72%;
+}
+
+.rocket {
+    position: absolute;
+    top: 18%;
+    height: 15%;
+    width: 7%;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+#rocket1 {
+    left: calc(20% + 8%/2 - 2%/2);
+}
+
+#rocket2 {
+    left: calc(45% + 8%/2 - 2%/2);
+}
+
+#rocket3 {
+    left: calc(70% + 8%/2 - 2%/2);
+}
+
+.bomb {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    height: 9%;
+    width: 7%;
+    background: url('../imgs/bomb.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+#bomb1 {
+    left: calc(20% + 8%/2 - 7%/2);
+}
+
+#bomb2 {
+    left: calc(45% + 8%/2 - 7%/2);
+}
+
+#bomb3 {
+    left: calc(70% + 8%/2 - 7%/2);
+}
+
+#floor {
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    background-color: #292929;
+    bottom: 0;
+    z-index: 10;
+}
+
+#char {
+    height: 100px;
+    width: 85px;
+    position: absolute;
+
+    bottom: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 11;
+}
+
+#score_1 {
+    position: absolute;
+    color:wheat;
+    font-size: 30px;
+    top: 45%;
+    left: 30%;
+}
+
+#restart {
+    border: 0;
+    right: 6px;
+    position:absolute;
+    height: 10%;
+    width: 110%;
+    background-color: palevioletred;
+    color: white;
+    top: 40%;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+}
+a {
+
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  position: absolute;
+  margin-top:5px;
+  margin-left:5px;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+.round {
+  border-radius: 50%;
+}
+#daiamondimg,#daiamondimg1,#daiamondimg2
+{
+  width:100px;
+  height:100px;
+  display: none;
+  position: absolute;
+  margin:auto;
+  margin-top: 100px;
+  left: 100px;
+}

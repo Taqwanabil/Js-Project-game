@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Options For Space Game</title>
+    <link rel="stylesheet" href="../css/login_intro.css">
+</head>
+<body>
+    
+    
+<embed id="sound" src="../imgs/Space2.mp3" width="70" height="30" loop="true" autostart="true" >
+  <div id="startPage"> 
+      <button class="button" id="level" ><span> Levels</span></button>
+      <button class="button" id="char" ><span> Characters</span></button>
+       <button class="button" id="credits"><span> Credits </span></button>
+       
+    </div>
+    
+<!--  Credit button-->
+<div id="myModalCredit" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Credits</h2>
+    </div>
+    <div class="modal-body">
+      <h3>This game is made by:<br> 1)Taqwa Nabil<br>2)Eslam Shaaban <br>3)Yara Mamdouh<br>4)Ahmed Khamis <br></h3>
+      <h3>The goal of the game is to collect as many rockets as possible,be careful of the increasing speed.
+      there are 3 levels if you are a beginner play Easy mode.<br>play more and you will be eligible to enter Hard mode.<br>if you are a profissional  player enter Insane mode but watch out of the different rockets they take from your lives..</h3>
+    </div>
+    <div class="modal-footer">
+      <h5>Client Side Technologies @2018</h5>
+    </div>
+  </div>
+</div>
+
+<!--   Levels button -->
+
+ <div id="myModalLevel" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Choose Your level</h2>
+    </div>
+    <div class="modal-body" style="margin-left:180px">
+        
+
+   <button class="button" id="level1" ><span>Easy </span></button><br>
+      <button class="button" id="level2" ><span>Hard </span></button><br>
+     <button class="button" id="level3" ><span>Insane</span></button>
+      </div>
+       <div class="modal-footer">
+      <h5>Client Side Technologies @2018</h5>
+    </div>
+     </div>
+    </div>
+      
+        <!--  Char button-->
+<div id="myModalChar" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>please choose your character</h2>
+    </div>
+    <div class="modal-body">
+        <span class="zoom"><img src="../imgs/char1.gif" width="200px" onclick=selectimage(this) ></span>
+         <span class="zoom"><img src="../imgs/char2.png" width="150px" onclick=selectimage(this)></span>
+           <span class="zoom" ><img src="../imgs/char3.gif" width=200px onclick=selectimage(this)></span>
+          <span class="zoom"><img src="../imgs/char4.gif" width=200px onclick=selectimage(this)></span>    
+            </div>
+  </div>
+</div>
+
+    
+<script src="../js/intro.js"></script>
+</body>
+</html>

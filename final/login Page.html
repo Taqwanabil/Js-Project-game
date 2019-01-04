@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page for Space Game</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login">
+    
+    <embed id="sound" src="imgs/Space2.mp3" width="70" height="30" loop="true" autostart="true" >
+    
+         <button class="button" id="play" ><span> Play</span></button> 
+         <button class="button" id="Exit" ><span> Exit</span></button> 
+
+<!--    Play button -->
+   
+ <div id="myModalPlay" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Enter your Name to keep track of your score</h2>
+    </div>
+    <div class="modal-body">
+      <form id="my-form" onsubmit="return validateForm();" >
+          
+          <h2> Login Here </h2>
+          <h3>Username</h3>
+            <input type="text"  id="fname" placeholder="Your Name:" ><br><br>
+            <div class="danger" id="alert_name"></div>
+          <button class="button" id="submit" type="submit" ><span>Submit</span></button>
+      </form>
+   <div class="modal-footer">
+      <h5>Client Side Technologies @2018</h5>
+    </div>
+  </div>
+</div>
+</div>
+    <!--    Exit button -->
+   
+ <div id="myModalExit" class="modal">
+
+  <div class="modal-content">    
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Do you Want to Exit?</h2>
+    </div>
+    <div class="modal-body">
+    <form>        
+        <button class="button" id="No" type="submit" formaction="login Page.html" ><span>No</span></button>
+        <button class="button" id="Yes" type="submit" formaction="htmls/We will Miss You.html" ><span>Yes</span></button>
+        </form>
+    </div>
+      <div class="modal-footer">
+      <h5>Client Side Technologies @2018</h5>
+    </div>
+  </div>
+</div>
+    <script src="js/login.js"></script>
+
+    </body>
+    
+    </html>

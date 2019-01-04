@@ -1,0 +1,155 @@
+body {
+    background : top url('../imgs/bg1.gif') no-repeat ;
+    background-size: 100%;
+    padding: 0;
+}
+.login{
+     background : top url('../imgs/bg1.gif') no-repeat ;
+    background-size: 100%;
+    width:30%;
+}
+
+#credits,#char{
+      margin-top: 6%;
+}
+
+#level{
+      margin-top: 10%;
+}
+
+#credits,#char,#level
+{ 
+    font-family: "Comic Sans MS";
+    font-size: 28px;
+    align-content: center;
+    margin-left: 40%;
+    border-radius: 50px;   
+}
+
+#submit,#Yes,#No{
+  font-family: "Comic Sans MS";
+  font-size: 28px;  border-radius: 16px;
+  background-color:brown;
+  color:wheat;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px; 
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button
+{
+  font-family: "Comic Sans MS";
+    font-size: 28px;
+  border-radius: 50px;
+  background-color:firebrick;
+  border: none;
+  color:wheat;
+  text-align: center;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin: 3px;
+}
+.button:hover {
+  background-color:cadetblue; 
+  color: white;
+    
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* The Credits (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  margin-top:10%; 
+  margin-left:25%;
+  background-color:blanchedalmond;
+  width: 40%;
+ color: firebrick;
+}
+
+/* The Close Button */
+.close {
+  color: firebrick;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.modal-header,.modal-footer {
+  padding: 1px 20px;
+  background-color:#004d4d;
+  color :wheat;
+}
+
+.modal-body {padding: 20px 16px;}
+
+h5{
+    margin-left:390px;
+}
+#e1{
+    display:none;
+     color: red ;
+}
+
+/* Char Zoom */
+
+.zoom {
+  padding: 20px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+.zoom:hover {
+  transform: scale(1.5); 
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
