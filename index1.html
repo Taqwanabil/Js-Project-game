@@ -1,0 +1,91 @@
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eggs</title>
+  <link href="css/main.css" rel="stylesheet" />
+  <style>
+a {
+
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  position: absolute;
+  margin-top:5px;
+  margin-left:5px;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+.round {
+  border-radius: 50%;
+}
+</style>
+
+</head>
+
+
+
+<body>
+  <div id="container">
+
+    <div id="score_help"> Score:
+      <span id="score">0</span> | Life:
+      <span id="life"></span> | Use mouse to control
+    </div>
+
+     <embed id="sound" src="Space.mp3" width="70" height="30" loop="true" autostart="true">
+
+
+    <div id="hen1" class="hen"></div>
+    <div id="hen2" class="hen"></div>
+    <div id="hen3" class="hen"></div>
+
+    <img src="3.png" id="egg1" class="egg" data-bullseye='1'>
+    <img src="3.png" id="egg2" class="egg" data-bullseye='2'>
+    <img src="3.png" id="egg3" class="egg" data-bullseye='3'>
+
+    <div id="bullseye1" class="bullseye"></div>
+    <div id="bullseye2" class="bullseye"></div>
+    <div id="bullseye3" class="bullseye"></div>
+
+    <div id="basket">
+    <img id="yara" src="char4.png" width="100" >
+      <span id="score_1"></span>
+    </div>
+
+    <div id="floor"></div>
+
+    <button id="restart">Restart</button>
+
+  </div>
+
+
+
+<a href="index.html" class="previous round">&#8249;</a>
+
+
+
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/collision_detection.js"></script>
+  <script src="js/variables.js"></script>
+  <script src="js/functions.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
